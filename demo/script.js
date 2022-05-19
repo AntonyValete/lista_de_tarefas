@@ -3,5 +3,5 @@ function add() {
     var itemDaLista = document.createElement("li")
     itemDaLista.innerHTML = texto.value
     document.getElementById("lista").append(itemDaLista)
-    document.getElementById("campoDeTexto").value = ""
+    texto.value = ""
 }
