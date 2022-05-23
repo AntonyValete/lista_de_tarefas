@@ -1,18 +1,18 @@
 
 function adicionarElementos(){
-    var lista = document.getElementById("lista")
-    var campo = document.getElementById("textoDoUsuario");
-    var novoElemento = document.createElement("li");
-    novoElemento.innerHTML = campo.value;
-    lista.append(novoElemento);
+    var modelo = document.getElementById("modelo");
+    var novo = modelo.content.cloneNode(true);
 
-    var novoBotao = document.createElement("input");
-    novoBotao.type = "button";
-    novoBotao.value = "Remover"
-    lista.append(novoBotao);
+    var li = novo.querySelector("li");
+    var item = document.getElementById("textoDoUsuario")
+    var p = novo.querySelector("p");
+    p.innerHTML = item.value;
+    
 
 
+    document.getElementById("lista").append(li);
 }
 function remover(){
     lista.innerHTML = '';
 }
+
