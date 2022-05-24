@@ -16,18 +16,16 @@
         <input type="button" id="botao" value="Confirmar" onclick="adicionarElementos()">
     </div>
 
+    <template id="modelo">
+        <li>
+            <div id="area"> 
+                <p> </p>
+                <input type="button" value="Remover" onclick="remover()">
+            </div>
+        </li>
+    </template>
     
-        <ul id="lista">
-            <template id="modelo">
-                <li>
-                    <div id="area"> 
-                        <p> </p>
-                        <input type="button" value="Remover" onclick="remover()">
-                    </div>
-                </li>
-            </template>
-        </ul>
-    
+    <ul id="lista"></ul>
 
     <script src="script.js"></script>
 
