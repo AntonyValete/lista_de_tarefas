@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>INPUTS</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Lista de Tarefas</title>
 </head>
+
 <body>
-    <h2>Lista de Tarefas</h2>
-    <div id="area_input">
-        <input type="text" id="textoDoUsuario" placeholder="Informe a Tarefa">
-        <input type="button" id="botao" value="Confirmar" onclick="adicionarElementos()">
+    <h1>Lista de Tarefas</h1>
+    <div>
+        <input type="text" placeholder="Informe a Tarefa">
+        <input type="button" value="Inserir" onclick="adicionarItem()">
     </div>
-        <ul id="lista"></ul>
-    <script src="script.js"></script>
+    <ul>
+        <template id="modeloItem">
+            <li>
+                <p></p>
+                <input type="button" value="Remover" onclick="remover(this.parentElement)">
+            </li>
+        </template>
+    </ul>
+    <script src="./assets/js/script.js"></script>
 </body>
-   
 </html>
